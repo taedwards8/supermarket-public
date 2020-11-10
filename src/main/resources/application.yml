@@ -1,0 +1,21 @@
+spring:
+  profiles: local
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    #URL updated based on https://stackoverflow.com/a/55815322
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example?serverTimezone=UTC
+    username: supermarket
+    password: supermarket
+---
+spring:
+  profiles: prod
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    #URL updated based on https://stackoverflow.com/a/55815322
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example?serverTimezone=UTC
+    username: supermarket
+    password: supermarketX
