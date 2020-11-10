@@ -1,5 +1,5 @@
 # Supermarket
-The repository acts as a sandbox for me to experment with different Java tools and technologies
+The repository acts as a sandbox for me to experiment with different Java tools and technologies
 
 ## Purpose
 The repository and database represent a supermarket.  It contains tables to describes food items and recipes involving those food items
