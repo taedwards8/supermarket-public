@@ -78,7 +78,6 @@ Returns all the recipes and their ingredients and quantities
 curl -X GET "localhost:8080/recipe/all"
 ````
 ## Main Things Learnt
-* My intention was to create and define the database entirely through Java and annotations.
-At a basic level I have succeeded as running this application will lead to the creation of the recipe, food_item and recipe_to_food_item tables.
-However Spring Boot has trouble with more complication notions like many-to-many relationships and intermediary tables (hence why the RecipeToFoodItemKey class is required) and this has led to issues adding and getting entries to/from the recipe table.
+* My intention was to define the schema and then create the database entirely through Java and annotations and I have succeeded in doing this.
+However Spring Boot has trouble with more complicated notions like many-to-many relationships and intermediary tables (hence why the RecipeToFoodItemKey class is required) and this has led to issues adding and getting entries to/from the recipe table.
 If I was beginning this project again then although I would make use of the CrudRepository interface for simpler database queries I would define the schema itself manually in SQL rather than relying in Spring Annotations.
